@@ -17,7 +17,7 @@
     "sass": "^1.26.9"
   },
   "scripts": {
-    "predeploy": "npm run cover",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d cover",
     "start": "react-scripts start",
     "build": "react-scripts build",
