@@ -1,34 +1,61 @@
 import React from "react";
-import { Badge, Card, Button } from "react-bootstrap";
+
+
+import { Card} from "react-bootstrap";
+import {HomeModal}  from "./Views/NavButton"
+
+import {
+  BsFillHouseFill,
+  BsFillDisplayFill,
+  BsMusicNoteBeamed,
+  BsPlug,
+  BsFillPlusCircleFill
+} from "react-icons/bs";
+import { GiLightBulb } from "react-icons/gi";
+import { WiThermometer } from "react-icons/wi";
 
 class OptionCard extends React.Component {
-  
+  constructor(props) {
+    super(props);
+    this.pickImage = this.pickImage.bind(this);
+  }
+
 
   state = {
-    // There is a problem loading images that stems from the webpack, this is a temporary fix, I will patch this out once I have more time on hand.
-      images: [require("../images/GitHub.png"),require("../images/lnk.png"),require("../images/OpenCV.png")]
+    images:
+    {
+     "BsFillHouseFill": BsFillHouseFill,
+      "BsFillDisplayFill":BsFillDisplayFill,
+      "GiLightBulb":GiLightBulb ,
+      "BsMusicNoteBeamed":BsMusicNoteBeamed,
+      "BsPlug":BsPlug,
+      "BsFillPlusCircleFill":BsFillPlusCircleFill,
+      "WiThermometer": WiThermometer
+    }
       
   };
 
+  //Dynamically chooses what image to display based on the Image string in the data
+  pickImage()
+  {
+    var Img = this.state.images[this.props.data.Image]
+  return  ( 
+  <div className="p-2 d-flex justify-content-md-center"  style={{color: 'SteelBlue'}}>
+  <Img size={64} />
+    </div>)
+    
+  }
 
- 
+
+
   render() {
     //<Card.Image variant="top" src={this.props.data.image} />
     return (
-      <Card  border="success" className="h-100 shadow-sm bg-white rounded">
-        <Card.Body className="d-flex flex-column">
-        <Card.Img variant="top" src={this.state.images[this.props.data.id]} />
-          <div className="d-flex mb-2 justify-content-between">
-            <Card.Title className="mb-0 font-weight-bold">
-              {this.props.data.name}
-            </Card.Title>
-          </div>
-          <Card.Text className="text-secondary">
-            {this.props.data.desc}
-          </Card.Text>
-          <Button href={this.props.data.Link} className="mt-auto font-weight-bold" variant="success" block >
-            Go To
-          </Button>
+      <Card  border="primary" className="h-60 shadow-sm bg-white rounded ">
+        <Card.Body className="d-flex flex-column justify-content-md-center">
+          {this.pickImage("This")}
+
+          <HomeModal  data={this.props.data}></HomeModal>
         </Card.Body>
       </Card>
     );

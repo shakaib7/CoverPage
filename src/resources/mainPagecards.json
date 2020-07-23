@@ -1,0 +1,171 @@
+[
+    {
+        "ID": 0,
+        "Name": "Home",
+        "Image": "BsFillHouseFill",
+        "Modal": {
+            "DeviceName": "GarageDoor",
+            "Unit": [
+                {
+                    "id": 0,
+                    "Name": "Main Garage",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 1,
+                    "Name": "Second Garage",
+                    "Status": "closed"
+
+                }
+
+            ]
+        }
+
+    },
+    {
+        "ID": 1,
+        "Name": "TV",
+        "Image": "BsFillDisplayFill",
+        "Modal": {
+            "DeviceName": "TV",
+            "Unit": [
+                {
+                    "id": 0,
+                    "Name": "TV-1",
+                    "Status": "On"
+
+                },
+                {
+                    "id": 1,
+                    "Name": "TV-2",
+                    "Status": "Off"
+
+                }
+
+            ]
+        }
+
+    },
+    {
+        "ID": 2,
+        "Name": "Lights",
+        "Image": "GiLightBulb",
+        "Modal": {
+            "DeviceName": "GarageDoor",
+            "Unit": [
+                {
+                    "id": 0,
+                    "Name": "Main Garage",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 1,
+                    "Name": "Second Garage",
+                    "Status": "closed"
+
+                }
+
+            ]
+        }
+
+    },
+    {
+        "ID": 3,
+        "Name": "Music",
+        "Image": "BsMusicNoteBeamed",
+        "Modal": {
+            "DeviceName": "GarageDoor",
+            "Unit": [
+                {
+                    "id": 0,
+                    "Name": "Main Garage",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 1,
+                    "Name": "Second Garage",
+                    "Status": "closed"
+
+                }
+
+            ]
+        }
+
+    },
+    {
+        "ID": 4,
+        "Name": "Thermometer",
+        "Image": "WiThermometer",
+        "Modal": {
+            "DeviceName": "GarageDoor",
+            "Unit": [
+                {
+                    "id": 0,
+                    "Name": "Main Garage",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 1,
+                    "Name": "Second Garage",
+                    "Status": "closed"
+
+                }
+
+            ]
+        }
+
+    },
+    {
+        "ID": 5,
+        "Name": "Plugs",
+        "Image": "BsPlug",
+        "Modal": {
+            "DeviceName": "GarageDoor",
+            "Unit": [
+                {
+                    "id": 0,
+                    "Name": "Main Garage",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 1,
+                    "Name": "Second Garage",
+                    "Status": "closed"
+
+                }
+
+            ]
+        }
+
+    },
+    {
+        "ID": 5,
+        "Name": "Add new category +",
+        "Image": "BsFillPlusCircleFill",
+        "Modal": {
+            "DeviceName": "GarageDoor",
+            "Unit": [
+                {
+                    "id": 0,
+                    "Name": "Main Garage",
+                    "Status": "open"
+
+                },
+                {
+                    "id": 1,
+                    "Name": "Second Garage",
+                    "Status": "closed"
+
+                }
+
+            ]
+        }
+
+    }
+    
+]
